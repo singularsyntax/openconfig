@@ -657,7 +657,7 @@ module openconfig-network-instance {
                 }
 
                 container local {
-                  when "../config/type = 'LOCAL'" {
+                  when "../config/type = 'oc-ni-types:LOCAL'" {
                     description
                       "Only include the local configuration when
                       the endpoint is specified to be local to
@@ -685,7 +685,7 @@ module openconfig-network-instance {
                 }
 
                 container remote {
-                  when "../config/type = 'REMOTE'" {
+                  when "../config/type = 'oc-ni-types:REMOTE'" {
                     description
                       "Only include the remote configuration when
                       the endpoint is specified to be remote to

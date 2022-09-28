@@ -422,8 +422,8 @@ module openconfig-acl {
         }
 
         uses oc-match:ethernet-header-top {
-          when "../../config/type='ACL_L2' or " +
-            "../../config/type='ACL_MIXED'" {
+          when "../../config/type='openconfig-acl:ACL_L2' or " +
+            "../../config/type='openconfig-acl:ACL_MIXED'" {
             description
               "MAC-layer fields are valid when the ACL type is L2 or
               MIXED";
